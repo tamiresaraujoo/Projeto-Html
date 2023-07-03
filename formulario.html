@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <form action="/logar" method="post"></form>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <fieldset>
+        <h3>
+            <li><a href="/index.html">Voltar para Página Inicial</a>
+        </h3>
+        </li>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="assunto">Assunto:</label><br>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione o assunto</option>
+                <option value="Notícias Locais">Notícias Locais</option>
+                <option value="Esportes">Esportes</option>
+                <option value="Entretenimento">Entretenimento</option>
+                <option value="Outros">Outros</option>
+            </select><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" cols="40" rows="10" required></textarea><br>
+
+            <div class="botoes">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </fieldset>
+    <hr>
+    <footer>
+        <h3>Contato:</h3>
+        <ul>
+            <li><a href="mailto:tamiresaraujo301@gmail.com" target="_blank"><img width="30" height="30" src="email.png"
+                        alt="e-mail"></a></li>
+            <li><a href="https://www.linkedin.com/in/tamiresaraujoo/" target="_blank"><img width="30" height="30"
+                        src="like.png" alt="Linkedin"></a></li>
+            <li><a href="https://github.com/tamiresaraujoo" target="_blank"><img width="30" height="30" src="Git.png"
+                        alt="GitHub"></a></li>
+        </ul>
+        &copy; Todos os direitos reservados SoulCode Academy e Tamires Araujo
+    </footer>
 </body>
+
 </html>
